@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ng:
+    build: 
+      context: .
+      target: 'develop-stage'
+    container_name: template-ng1
+    ports:
+      - 4200:4200
+    volumes:
+      - ./app:/app 
+      # Link the app folder to the workdir
+      - /app/node_modules
