@@ -1,3 +1,8 @@
 <h2>Capsule  {{ capsule.capsule_id | uppercase }}</h2>
 <div><span>Current status: </span>{{capsule.status}}</div>
 <div><span>Info: </span>{{capsule.details}}</div>
+
+<div>
+  <label for='capsule_id'>Status: </label>
+  <input id='capsule_id' [(ngModel)]="capsule.capsule_id" placeholder="capsule_id">
+</div>
