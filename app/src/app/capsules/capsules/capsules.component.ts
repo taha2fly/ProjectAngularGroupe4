@@ -18,6 +18,11 @@ export class CapsulesComponent implements OnInit {
 
 	capsules = CAPSULES;
 	
+	selectedCapsule?: Capsule;
+	onSelect(capsule: Capsule): void {
+	this.selectedCapsule = capsule;
+	}
+
 	constructor() { }
 
 	ngOnInit(): void {

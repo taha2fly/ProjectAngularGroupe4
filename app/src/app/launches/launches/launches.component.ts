@@ -22,7 +22,12 @@ export class LaunchesComponent implements OnInit {
 //	};
 	
 	launches = LAUNCHES;
-		
+
+	selectedLaunch?: Launch;
+	onSelect(launch: Launch): void {
+  		this.selectedLaunch = launch;
+	}
+
 	constructor() { }
 
 	ngOnInit(): void {
