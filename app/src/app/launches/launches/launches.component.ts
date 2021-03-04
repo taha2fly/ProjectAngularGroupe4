@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Launch } from '../../models/launch.model';
-import { LAUNCHES } from '../../mock-api/mock-api-launches';
+//import { LAUNCHES } from '../../mock-api/mock-api-launches';
+import { LaunchService } from '../../services/launch.service';
+
 
 @Component({
 	selector: 'app-launches',
@@ -21,16 +23,31 @@ export class LaunchesComponent implements OnInit {
 //		details: "SSL manufactured communications satellite"
 //	};
 	
-	launches = LAUNCHES;
+//	launches = LAUNCHES;
+	launches: Launch[] = [];
+
 
 	selectedLaunch?: Launch;
 	onSelect(launch: Launch): void {
   		this.selectedLaunch = launch;
 	}
+	
+	// With this parameter we simultaneously define a private property
+	// And identify this property as injection site
+	constructor(private launchService: LaunchService) { }
 
-	constructor() { }
+	getLaunches(): void {
+		// Synchronous version that works correctly because we are 
+		// using mock-api data
+		//this.launches = this.launchService.getLaunches();	
+		
+		// We have to adapt our code in order to coop with the remote
+		// servers and their asynchronous operations
+		this.launchService.getLaunches().subscribe(launches => this.launches = launches );
+	} 
 
 	ngOnInit(): void {
+		this.getLaunches();
 	}
 
 }
