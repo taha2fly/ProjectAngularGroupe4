@@ -5,28 +5,5 @@
   </li>
 </ul>
 
-<!--
-<h2>{{selectedCapasule.capsule_serial | uppercase}} Details</h2>
-<div><span>capsule id: </span>{{selectedCapsule.capsule_id}}</div>
-<div>
-  <label for="Capsule serial">Capsule serial: </label>
-  <input id="capsule_serial" [(ngModel)]="selectedCapsule.capsule_serial" placeholder="name">
-</div>
--->
 
-<!-- The section below has been moved in CApsuleDetail.component.html.
-And in order to preserve its work, we replaced it by the line underneath it -->
-
-<!--
-<div *ngIf="selectedCapsule">
-
-  <h2>{{selectedCapsule.name | uppercase}} Details</h2>
-  <div><span>capsule serial: </span>{{selectedCapsule.capsule_serial}}</div>
-  <div>
-    <label for="capsule-name">Capsule name: </label>
-    <input id="capsule-name" [(ngModel)]="selectedCapsule.capsule_id" placeholder="name">
-  </div>
-
-</div>
--->
 <app-capsule-detail [capsule]="selectedCapsule"></app-capsule-detail>

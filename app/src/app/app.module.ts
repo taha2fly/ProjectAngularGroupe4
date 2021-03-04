@@ -8,6 +8,8 @@ import { LaunchesComponent } from './launches/launches/launches.component';
 import { CapsulesComponent } from './capsules/capsules/capsules.component';
 import { CapsuleDetailComponent } from './capsule-detail/capsule-detail.component';
 import { LaunchDetailComponent } from './launch-detail/launch-detail.component';
+import { CapsuleMessagesComponent } from './capsule-messages/capsule-messages.component';
+import { LaunchMessagesComponent } from './launch-messages/launch-messages.component';
 
 @NgModule({
 	declarations: [
@@ -15,7 +17,9 @@ import { LaunchDetailComponent } from './launch-detail/launch-detail.component';
 		LaunchesComponent,
 		CapsulesComponent,
 		CapsuleDetailComponent,
-		LaunchDetailComponent
+		LaunchDetailComponent,
+		CapsuleMessagesComponent,
+		LaunchMessagesComponent
 	],
 	imports: [
 		BrowserModule,

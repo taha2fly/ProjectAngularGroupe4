@@ -6,28 +6,4 @@
 </ul>
 
 
-<!--
-<h2>{{selectedLaunch.rocket.rocket_name | uppercase}} Details</h2>
-<div><span>flight number: </span>{{selectedLaunch.flight_number}}</div>
-<div>
-  <label for="Rocket name">Rocket name: </label>
-  <input id="rocket_name" [(ngModel)]="selectedLaunch.rocket.rocket_name" placeholder="name">
-</div>
--->
-
-<!-- The section below has been moved in CApsuleDetail.component.html.
-And in order to preserve its work, we replaced it by the line underneath it  -->
-
-<!--
-<div *ngIf="selectedLaunch">
-
-  <h2>{{selectedLaunch.rocket.rocket_name | uppercase}} Details</h2>
-  <div><span>flight number: </span>{{selectedLaunch.flight_number}}</div>
-  <div>
-    <label for="launch-name">Launch name: </label>
-    <input id="launch-name" [(ngModel)]="selectedLaunch.rocket.rocket_name" placeholder="name">
-  </div>
-
-</div>
--->
 <app-launch-detail [launch]="selectedLaunch"></app-launch-detail>
