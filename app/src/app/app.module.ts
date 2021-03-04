@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LaunchesComponent } from './launches/launches/launches.component';
 import { CapsulesComponent } from './capsules/capsules/capsules.component';
+import { CapsuleDetailComponent } from './capsule-detail/capsule-detail.component';
+import { LaunchDetailComponent } from './launch-detail/launch-detail.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		LaunchesComponent,
-		CapsulesComponent
+		CapsulesComponent,
+		CapsuleDetailComponent,
+		LaunchDetailComponent
 	],
 	imports: [
 		BrowserModule,

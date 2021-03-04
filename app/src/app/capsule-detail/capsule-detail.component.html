@@ -1,0 +1,10 @@
+<div *ngIf="capsule">
+
+  <h2>{{capsule.name | uppercase}} Details</h2>
+  <div><span>capsule serial: </span>{{capsule.capsule_serial}}</div>
+  <div>
+    <label for="capsule-name">Capsule name: </label>
+    <input id="capsule-name" [(ngModel)]="capsule.capsule_id" placeholder="name">
+  </div>
+
+</div>

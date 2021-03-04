@@ -1,0 +1,10 @@
+<div *ngIf="launch">
+
+  <h2>{{launch.rocket.rocket_name | uppercase}} Details</h2>
+  <div><span>flight number: </span>{{launch.flight_number}}</div>
+  <div>
+    <label for="launch-name">Launch name: </label>
+    <input id="launch-name" [(ngModel)]="launch.rocket.rocket_name" placeholder="name">
+  </div>
+
+</div>

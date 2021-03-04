@@ -14,6 +14,10 @@
 </div>
 -->
 
+<!-- The section below has been moved in CApsuleDetail.component.html.
+And in order to preserve its work, we replaced it by the line underneath it -->
+
+<!--
 <div *ngIf="selectedCapsule">
 
   <h2>{{selectedCapsule.name | uppercase}} Details</h2>
@@ -24,3 +28,5 @@
   </div>
 
 </div>
+-->
+<app-capsule-detail [capsule]="selectedCapsule"></app-capsule-detail>

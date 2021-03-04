@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Capsule } from '../../models/capsule.model'
+import { Capsule } from '../../models/capsule.model';
 import { CAPSULES } from '../../mock-api/mock-api-capsules';
 
 @Component({

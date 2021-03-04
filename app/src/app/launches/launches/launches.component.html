@@ -15,6 +15,10 @@
 </div>
 -->
 
+<!-- The section below has been moved in CApsuleDetail.component.html.
+And in order to preserve its work, we replaced it by the line underneath it  -->
+
+<!--
 <div *ngIf="selectedLaunch">
 
   <h2>{{selectedLaunch.rocket.rocket_name | uppercase}} Details</h2>
@@ -25,4 +29,5 @@
   </div>
 
 </div>
-
+-->
+<app-launch-detail [launch]="selectedLaunch"></app-launch-detail>
