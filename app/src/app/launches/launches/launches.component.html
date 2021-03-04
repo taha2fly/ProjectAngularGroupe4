@@ -1,8 +1,6 @@
-<h2>Rocket {{ launch.rocket.rocket_name | uppercase }}</h2>
-<div><span>Flight number: </span>{{launch.flight_number}}</div>
-<div><span>Info: </span>{{launch.details}}</div>
-
-<div>
-  <label for='name'>Rocket name: </label>
-  <input id='name' [(ngModel)]="launch.rocket.rocket_name" placeholder="name">
-</div>
+<h2>My Launches</h2>
+<ul class="launches">
+  <li *ngFor="let launch of launches">
+    <span class="badge">{{launch.flight_number}}</span> {{launch.rocket.rocket_name}}
+  </li>
+</ul>

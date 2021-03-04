@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Capsule } from '../../models/capsule.model'
+import { CAPSULES } from '../../mock-api/mock-api-capsules';
 
 @Component({
 	selector: 'app-capsules',
@@ -8,12 +9,14 @@ import { Capsule } from '../../models/capsule.model'
 })
 export class CapsulesComponent implements OnInit {
 
-	capsule: Capsule = {
-		capsule_serial: "C112",
-		capsule_id: "dragon1",
-		status: "active",
-		details: null
-	};
+//	capsule: Capsule = {
+//		capsule_serial: "C112",
+//		capsule_id: "dragon1",
+//		status: "active",
+//		details: null
+//	};
+
+	capsules = CAPSULES;
 	
 	constructor() { }
 
