@@ -1,6 +1,6 @@
 <div *ngIf="capsuleMessageService.messages.length">
 
-  <h2>Messages</h2>
+  <h2>Capsules : Messages</h2>
   <button class="clear"
           (click)="capsuleMessageService.clear()">Clear messages</button>
   <div *ngFor='let message of capsuleMessageService.messages'> {{message}} </div>

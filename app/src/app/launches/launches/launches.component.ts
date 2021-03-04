@@ -16,7 +16,7 @@ export class LaunchesComponent implements OnInit {
 	
 	onSelect(launch: Launch): void {
   		this.selectedLaunch = launch;
-  		this.launchMessageService.add(`LaunchesComponent: Selected launch rocket name=${launch.rocket.rocket_name}`);
+  		this.launchMessageService.add(`Selected launch rocket_name=${launch.rocket.rocket_name}`);
 	}
 	
 
