@@ -1,10 +1,11 @@
 <div *ngIf="capsule">
 
-  <h2>{{capsule.capsule_id | uppercase}} Details</h2>
-  <div><span>capsule serial: </span>{{capsule.capsule_serial}}</div>
+  <h2>{{capsule.capsule_serial | uppercase}} Details</h2>
+  <div><span>Capsule serial: </span>{{capsule.capsule_serial}}</div>
   <div>
-    <label for="capsule-name">Capsule name: </label>
-    <input id="capsule-name" [(ngModel)]="capsule.capsule_id" placeholder="name">
+  <span>Capsule id: </span>{{capsule.capsule_id}}
+    <!--<label for="capsule-name">Capsule name: </label>
+    <input id="capsule-name" [(ngModel)]="capsule.capsule_id" placeholder="name">-->
   </div>
 
 </div>

@@ -8,8 +8,11 @@ class Links {
 
 export class Launch {
 	flight_number: number;
+	mission_name: string;
+	mission_id: string[];
 	launch_year: string;
+	launch_date_utc: string;
 	rocket: Rocket;
 	links: Links;
-	details: string;
+	details: string | null;
 }

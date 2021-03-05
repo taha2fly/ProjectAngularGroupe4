@@ -1,7 +1,7 @@
 <h2>My Launches</h2>
 <ul class="launches">
   <li *ngFor="let launch of launches" [class.selected]="launch === selectedLaunch" (click)="onSelect(launch)">
-    <span class="badge">{{launch.flight_number}}</span> {{launch.rocket.rocket_name}}
+    <span class="badge">{{launch.flight_number}}</span> {{launch.mission_name}}
   </li>
 </ul>
 

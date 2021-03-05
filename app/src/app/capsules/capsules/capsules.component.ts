@@ -16,7 +16,7 @@ export class CapsulesComponent implements OnInit {
 	
 	onSelect(capsule: Capsule): void {
 		this.selectedCapsule = capsule;
-		this.capsuleMessageService.add(`Selected Capsule id=${capsule.capsule_id}`);
+		this.capsuleMessageService.add(`Selected Capsule of serial n°${capsule.capsule_serial}`);
 	}
 
 
