@@ -1,16 +1,17 @@
 <h2>My Launches</h2>
 
-  <div>
+<div>
 	<div class="left">
 	  <ul class="launches">
 	    <li *ngFor="let launch of launches" [class.selected]="launch === selectedLaunch" (click)="onSelect(launch)">
 	      <span class="badge">{{launch.flight_number}}</span>{{launch.mission_name}}
 	    </li>
 	  </ul>
+	  <app-launch-messages></app-launch-messages>
 	</div>
 
 	<div class="right">
-	  <app-launch-detail [launch]="selectedLaunch"></app-launch-detail>
-	  <!-- <app-launch-messages></app-launch-messages> -->
+		<app-launch-detail [launch]="selectedLaunch"></app-launch-detail>
 	</div>
-  </div>
+</div>
+

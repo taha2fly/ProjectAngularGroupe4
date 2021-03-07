@@ -1,7 +1,7 @@
 <div *ngIf="launch" class="content">
   <div class="launchShip">
 
-  	  <h2>{{launch.rocket.rocket_name | uppercase}} Details</h2>
+  	  <h2>{{launch.mission_name | uppercase}}</h2>
 
 	  <div>
 	  	<span>flight number: </span>{{launch.flight_number}}
@@ -9,8 +9,14 @@
 
 	  <div>
 	  	<span>flight name: </span>{{launch.mission_name}}
+	  	<br>	
+		<p><span *ngIf="launch.details">About the launch: </span><br>{{launch.details}}</p>
+		<br>
+		<img *ngIf="launch.links.mission_patch" class="fit-picture" src={{launch.links.mission_patch}} alt="mission patch">
+	  	<!--
 	    <label for="launch-name">Launch name: </label>
 	    <input id="launch-name" [(ngModel)]="launch.rocket.rocket_name" placeholder="name">
+		-->
 	  </div>
 
   </div>
