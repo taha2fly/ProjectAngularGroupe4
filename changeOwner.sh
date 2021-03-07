@@ -1,4 +1,4 @@
 #!/bin/sh
 
-sudo chown -R taha:taha app
+sudo chown -R ${USER}:${USER} app
 

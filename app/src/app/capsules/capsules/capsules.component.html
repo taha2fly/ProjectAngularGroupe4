@@ -1,0 +1,18 @@
+<h2>My Capsules</h2>
+
+<div>
+	<div class ="left">
+		<ul class="capsules">
+			<li *ngFor="let capsule of capsules"  [class.selected]="capsule === selectedCapsule" (click)="onSelect(capsule)" >
+			    <span class="badge">{{capsule.capsule_serial}}</span> {{ capsule.type }}
+			</li>
+		</ul>
+		<app-capsule-messages></app-capsule-messages>
+	</div>
+
+	<div class="right">
+		<app-capsule-detail [capsule]="selectedCapsule"></app-capsule-detail>
+	</div>
+</div>
+
+
