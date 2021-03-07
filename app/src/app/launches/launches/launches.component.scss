@@ -32,7 +32,6 @@
   background-color: black;
   color: white;
 }
-
 .launches .badge {
   display: inline-block;
   font-size: small;
@@ -47,17 +46,12 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
-
-.launch_left {
+.left {
   float:left;
-  margin-left: 30px;
 }
-
-.launch_right {
+.right {
   float:right;
-  margin-right: 80px;
 }
-
 input {
   padding: .5rem;
 }
