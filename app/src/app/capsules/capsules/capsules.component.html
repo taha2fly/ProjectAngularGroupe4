@@ -1,16 +1,17 @@
 <h2>My Capsules</h2>
-  <div>
-	<div class="leftc">
-	<ul class="capsules">
-	  <li *ngFor="let capsule of capsules"  [class.selected]="capsule === selectedCapsule" (click)="onSelect(capsule)" >
-	    <span class="badge">{{capsule.capsule_serial}}</span> {{ capsule.type }}
-	  </li>
-	</ul>
+
+<div>
+	<div class ="left">
+		<ul class="capsules">
+			<li *ngFor="let capsule of capsules"  [class.selected]="capsule === selectedCapsule" (click)="onSelect(capsule)" >
+			    <span class="badge">{{capsule.capsule_serial}}</span> {{ capsule.type }}
+			</li>
+		</ul>
 	</div>
 
-	<div calss="rightc">
-	<app-capsule-detail [capsule]="selectedCapsule"></app-capsule-detail>
+	<div class="right">
+		<app-capsule-detail [capsule]="selectedCapsule"></app-capsule-detail>
 	</div>
-  </div>
+</div>
 <!-- <app-capsule-messages></app-capsule-messages> -->
 
