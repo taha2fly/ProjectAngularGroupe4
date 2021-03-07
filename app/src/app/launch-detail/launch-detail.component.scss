@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 1em;
+  height: 5000px;
+  margin-right:30%;
+}
+.launchShip {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+}
